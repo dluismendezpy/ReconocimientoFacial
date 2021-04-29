@@ -35,19 +35,18 @@ namespace ReconocimientoFacial
             this.txtName = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnTrain = new System.Windows.Forms.Button();
-            this.btnRecognize = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtApto = new System.Windows.Forms.TextBox();
+            this.txtAptooo = new System.Windows.Forms.Label();
+            this.txtEdificio = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtEdificio = new System.Windows.Forms.TextBox();
-            this.txtAptooo = new System.Windows.Forms.Label();
-            this.txtApto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -66,7 +65,7 @@ namespace ReconocimientoFacial
             // 
             // btnCapture
             // 
-            this.btnCapture.Location = new System.Drawing.Point(15, 33);
+            this.btnCapture.Location = new System.Drawing.Point(14, 63);
             this.btnCapture.Name = "btnCapture";
             this.btnCapture.Size = new System.Drawing.Size(245, 54);
             this.btnCapture.TabIndex = 1;
@@ -76,7 +75,7 @@ namespace ReconocimientoFacial
             // 
             // btnDeteccion
             // 
-            this.btnDeteccion.Location = new System.Drawing.Point(15, 104);
+            this.btnDeteccion.Location = new System.Drawing.Point(14, 134);
             this.btnDeteccion.Name = "btnDeteccion";
             this.btnDeteccion.Size = new System.Drawing.Size(245, 54);
             this.btnDeteccion.TabIndex = 2;
@@ -106,22 +105,13 @@ namespace ReconocimientoFacial
             // 
             // btnTrain
             // 
-            this.btnTrain.Location = new System.Drawing.Point(15, 175);
+            this.btnTrain.Location = new System.Drawing.Point(14, 205);
             this.btnTrain.Name = "btnTrain";
             this.btnTrain.Size = new System.Drawing.Size(245, 53);
             this.btnTrain.TabIndex = 5;
             this.btnTrain.Text = "Buscar rostro";
             this.btnTrain.UseVisualStyleBackColor = true;
             this.btnTrain.Click += new System.EventHandler(this.btnTrain_Click);
-            // 
-            // btnRecognize
-            // 
-            this.btnRecognize.Location = new System.Drawing.Point(15, 245);
-            this.btnRecognize.Name = "btnRecognize";
-            this.btnRecognize.Size = new System.Drawing.Size(245, 53);
-            this.btnRecognize.TabIndex = 6;
-            this.btnRecognize.Text = "Recognize";
-            this.btnRecognize.UseVisualStyleBackColor = true;
             // 
             // pictureBox2
             // 
@@ -137,7 +127,7 @@ namespace ReconocimientoFacial
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.Location = new System.Drawing.Point(12, 128);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(245, 36);
+            this.btnAdd.Size = new System.Drawing.Size(248, 36);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Agregar";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -178,12 +168,43 @@ namespace ReconocimientoFacial
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Agregar persona";
             // 
+            // txtApto
+            // 
+            this.txtApto.Location = new System.Drawing.Point(83, 96);
+            this.txtApto.Name = "txtApto";
+            this.txtApto.Size = new System.Drawing.Size(177, 26);
+            this.txtApto.TabIndex = 12;
+            // 
+            // txtAptooo
+            // 
+            this.txtAptooo.AutoSize = true;
+            this.txtAptooo.Location = new System.Drawing.Point(8, 99);
+            this.txtAptooo.Name = "txtAptooo";
+            this.txtAptooo.Size = new System.Drawing.Size(47, 20);
+            this.txtAptooo.TabIndex = 11;
+            this.txtAptooo.Text = "Apto.";
+            // 
+            // txtEdificio
+            // 
+            this.txtEdificio.Location = new System.Drawing.Point(83, 61);
+            this.txtEdificio.Name = "txtEdificio";
+            this.txtEdificio.Size = new System.Drawing.Size(177, 26);
+            this.txtEdificio.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Edificio";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnCapture);
             this.groupBox2.Controls.Add(this.btnDeteccion);
             this.groupBox2.Controls.Add(this.btnTrain);
-            this.groupBox2.Controls.Add(this.btnRecognize);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(655, 14);
             this.groupBox2.Name = "groupBox2";
@@ -211,38 +232,6 @@ namespace ReconocimientoFacial
             this.label3.Size = new System.Drawing.Size(74, 20);
             this.label3.TabIndex = 14;
             this.label3.Text = "Captures";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 20);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Edificio";
-            // 
-            // txtEdificio
-            // 
-            this.txtEdificio.Location = new System.Drawing.Point(83, 61);
-            this.txtEdificio.Name = "txtEdificio";
-            this.txtEdificio.Size = new System.Drawing.Size(177, 26);
-            this.txtEdificio.TabIndex = 10;
-            // 
-            // txtAptooo
-            // 
-            this.txtAptooo.AutoSize = true;
-            this.txtAptooo.Location = new System.Drawing.Point(8, 99);
-            this.txtAptooo.Name = "txtAptooo";
-            this.txtAptooo.Size = new System.Drawing.Size(47, 20);
-            this.txtAptooo.TabIndex = 11;
-            this.txtAptooo.Text = "Apto.";
-            // 
-            // txtApto
-            // 
-            this.txtApto.Location = new System.Drawing.Point(83, 96);
-            this.txtApto.Name = "txtApto";
-            this.txtApto.Size = new System.Drawing.Size(177, 26);
-            this.txtApto.TabIndex = 12;
             // 
             // Form1
             // 
@@ -281,7 +270,6 @@ namespace ReconocimientoFacial
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnTrain;
-        private System.Windows.Forms.Button btnRecognize;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.PictureBox pictureBox3;
