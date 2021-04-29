@@ -9,7 +9,7 @@ Este es un proyecto para administrar la entrada de personas a un residencial uti
 Para ejercutar mi proyecto debes dener instalado:
 - EntityFramework
 - EmguCV
-- Residentes.sql- Crear y conectar tu base de datos, puedes encontrar la base de datos en el archivo "Residentes.sql"
+- Crear y conectar tu base de datos, puedes encontrar la base de datos en el archivo "Residentes.sql"
 
 
 
