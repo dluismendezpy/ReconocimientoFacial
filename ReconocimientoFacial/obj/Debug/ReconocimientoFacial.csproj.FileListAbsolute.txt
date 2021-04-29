@@ -34,3 +34,7 @@ C:\Users\luis_\source\repos\ReconocimientoFacial\ReconocimientoFacial\obj\Debug\
 C:\Users\luis_\source\repos\ReconocimientoFacial\ReconocimientoFacial\obj\Debug\ReconocimientoFacial.exe
 C:\Users\luis_\source\repos\ReconocimientoFacial\ReconocimientoFacial\obj\Debug\ReconocimientoFacial.pdb
 C:\Users\luis_\source\repos\ReconocimientoFacial\ReconocimientoFacial\obj\Debug\ReconocimientoFacial.csprojAssemblyReference.cache
+C:\Users\luis_\source\repos\ReconocimientoFacial\ReconocimientoFacial\bin\Debug\EntityFramework.dll
+C:\Users\luis_\source\repos\ReconocimientoFacial\ReconocimientoFacial\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\luis_\source\repos\ReconocimientoFacial\ReconocimientoFacial\bin\Debug\EntityFramework.xml
+C:\Users\luis_\source\repos\ReconocimientoFacial\ReconocimientoFacial\bin\Debug\EntityFramework.SqlServer.xml

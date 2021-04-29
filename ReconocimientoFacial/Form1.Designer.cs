@@ -44,6 +44,10 @@ namespace ReconocimientoFacial
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtEdificio = new System.Windows.Forms.TextBox();
+            this.txtAptooo = new System.Windows.Forms.Label();
+            this.txtApto = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -92,9 +96,9 @@ namespace ReconocimientoFacial
             this.btnGuardar.BackColor = System.Drawing.Color.SteelBlue;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(12, 336);
+            this.btnGuardar.Location = new System.Drawing.Point(12, 348);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(916, 50);
+            this.btnGuardar.Size = new System.Drawing.Size(916, 48);
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -130,11 +134,12 @@ namespace ReconocimientoFacial
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(12, 127);
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(12, 128);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(245, 37);
+            this.btnAdd.Size = new System.Drawing.Size(245, 36);
             this.btnAdd.TabIndex = 8;
-            this.btnAdd.Text = "Add";
+            this.btnAdd.Text = "Agregar";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -159,6 +164,10 @@ namespace ReconocimientoFacial
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtApto);
+            this.groupBox1.Controls.Add(this.txtAptooo);
+            this.groupBox1.Controls.Add(this.txtEdificio);
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnAdd);
             this.groupBox1.Controls.Add(this.txtName);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -167,7 +176,7 @@ namespace ReconocimientoFacial
             this.groupBox1.Size = new System.Drawing.Size(271, 170);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Datos";
+            this.groupBox1.Text = "Agregar persona";
             // 
             // groupBox2
             // 
@@ -181,7 +190,7 @@ namespace ReconocimientoFacial
             this.groupBox2.Size = new System.Drawing.Size(273, 316);
             this.groupBox2.TabIndex = 12;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Utilidacdes";
+            this.groupBox2.Text = "Utilidades";
             // 
             // label2
             // 
@@ -203,11 +212,43 @@ namespace ReconocimientoFacial
             this.label3.TabIndex = 14;
             this.label3.Text = "Captures";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(8, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 20);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Edificio";
+            // 
+            // txtEdificio
+            // 
+            this.txtEdificio.Location = new System.Drawing.Point(83, 61);
+            this.txtEdificio.Name = "txtEdificio";
+            this.txtEdificio.Size = new System.Drawing.Size(177, 26);
+            this.txtEdificio.TabIndex = 10;
+            // 
+            // txtAptooo
+            // 
+            this.txtAptooo.AutoSize = true;
+            this.txtAptooo.Location = new System.Drawing.Point(8, 99);
+            this.txtAptooo.Name = "txtAptooo";
+            this.txtAptooo.Size = new System.Drawing.Size(47, 20);
+            this.txtAptooo.TabIndex = 11;
+            this.txtAptooo.Text = "Apto.";
+            // 
+            // txtApto
+            // 
+            this.txtApto.Location = new System.Drawing.Point(83, 96);
+            this.txtApto.Name = "txtApto";
+            this.txtApto.Size = new System.Drawing.Size(177, 26);
+            this.txtApto.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(946, 402);
+            this.ClientSize = new System.Drawing.Size(945, 420);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -249,6 +290,10 @@ namespace ReconocimientoFacial
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtApto;
+        private System.Windows.Forms.Label txtAptooo;
+        private System.Windows.Forms.TextBox txtEdificio;
+        private System.Windows.Forms.Label label4;
     }
 }
 

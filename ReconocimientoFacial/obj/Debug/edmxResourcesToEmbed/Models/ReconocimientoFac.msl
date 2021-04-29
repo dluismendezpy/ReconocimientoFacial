@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ReconocimientoFacModelStoreContainer" CdmEntityContainer="ReconocimientoFacEntities">
+    <EntitySetMapping Name="Residentes">
+      <EntityTypeMapping TypeName="ReconocimientoFacModel.Residente">
+        <MappingFragment StoreEntitySet="Residentes">
+          <ScalarProperty Name="edificio" ColumnName="edificio" />
+          <ScalarProperty Name="apartamento" ColumnName="apartamento" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -14,6 +14,7 @@ using Emgu.CV.CvEnum;
 using System.IO;
 using System.Threading;
 using System.Diagnostics;
+using ReconocimientoFacial.Models;
 
 namespace ReconocimientoFacial
 {
@@ -34,6 +35,8 @@ namespace ReconocimientoFacial
         private bool isTrained = false;
         EigenFaceRecognizer recognizer;
         List<string> PersonsNames = new List<string>();
+        public int? id;
+        Residente residentes = null;
 
 
         public Form1()
@@ -145,6 +148,29 @@ namespace ReconocimientoFacial
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            using (ReconocimientoFacEntities db = new ReconocimientoFacEntities())
+            {
+
+                if (id == null)
+                    residentes = new Residente();
+
+                residentes.nombre = txtName.Text;
+                residentes.edificio = txtEdificio.Text;
+                residentes.apartamento = txtApto.Text;
+
+                if (id == null)
+                {
+                    db.Residentes.Add(residentes);
+                }
+                else
+                {
+                    db.Entry(residentes).State = System.Data.Entity.EntityState.Modified;
+                }
+
+                db.SaveChanges();
+            }
+
+
             btnAdd.Enabled = false;
             EnableSaveImage = true;
         }
